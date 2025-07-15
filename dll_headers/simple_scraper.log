@@ -1,0 +1,488 @@
+2025-07-07 14:21:18,171 - [MainThread] - INFO - Finding headers from multiple sources...
+2025-07-07 14:23:24,373 - [MainThread] - INFO - Found 75 headers total (user-mode + kernel)
+2025-07-07 14:23:24,390 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP bcrypt: File already exists
+2025-07-07 14:23:24,391 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP compressapi: File already exists
+2025-07-07 14:23:24,391 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP d3dkmddi: File already exists
+2025-07-07 14:23:24,393 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP dbghelp: File already exists
+2025-07-07 14:23:24,393 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP debugapi: File already exists
+2025-07-07 14:23:24,394 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP dispmprt: File already exists
+2025-07-07 14:23:30,708 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP errhandlingapi: File already exists
+2025-07-07 14:23:30,708 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP fibersapi: File already exists
+2025-07-07 14:23:30,709 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP fileapi: File already exists
+2025-07-07 14:23:30,709 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP fltkernel: File already exists
+2025-07-07 14:23:31,981 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP handleapi: File already exists
+2025-07-07 14:23:33,206 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP heapapi: File already exists
+2025-07-07 14:23:33,206 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP ioaccess: File already exists
+2025-07-07 14:23:33,207 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP jobapi: File already exists
+2025-07-07 14:23:34,505 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP libloaderapi: File already exists
+2025-07-07 14:23:34,505 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP memoryapi: File already exists
+2025-07-07 14:23:34,506 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP miniport: File already exists
+2025-07-07 14:23:34,506 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP minitape: File already exists
+2025-07-07 14:23:34,507 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP namedpipeapi: File already exists
+2025-07-07 14:23:34,507 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP ncrypt: File already exists
+2025-07-07 14:23:34,508 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP ndis: File already exists
+2025-07-07 14:23:34,508 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP netadapter: File already exists
+2025-07-07 14:23:41,085 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP netrxqueue: File already exists
+2025-07-07 14:23:41,086 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP nettxqueue: File already exists
+2025-07-07 14:23:41,087 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP ntddk: File already exists
+2025-07-07 14:23:41,087 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP ntifs: File already exists
+2025-07-07 14:23:42,465 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP pathcch: File already exists
+2025-07-07 14:23:42,465 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP portcls: File already exists
+2025-07-07 14:23:42,466 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP processenv: File already exists
+2025-07-07 14:23:42,466 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP processthreadsapi: File already exists
+2025-07-07 14:23:42,466 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP psapi: File already exists
+2025-07-07 14:23:42,467 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP schannel: File already exists
+2025-07-07 14:23:42,467 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP scsi: File already exists
+2025-07-07 14:23:42,467 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP securitybaseapi: File already exists
+2025-07-07 14:23:42,467 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP sercx: File already exists
+2025-07-07 14:23:42,468 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP setupapi: File already exists
+2025-07-07 14:23:42,468 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP shellapi: File already exists
+2025-07-07 14:23:42,468 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP shlwapi: File already exists
+2025-07-07 14:23:42,468 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP shobjidl_core: File already exists
+2025-07-07 14:23:42,469 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP spb: File already exists
+2025-07-07 14:23:42,469 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP sspi: File already exists
+2025-07-07 14:23:42,469 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP storport: File already exists
+2025-07-07 14:23:42,469 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP synchapi: File already exists
+2025-07-07 14:23:42,470 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP threadpoolapiset: File already exists
+2025-07-07 14:23:42,470 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP threadpoollegacyapiset: File already exists
+2025-07-07 14:23:42,471 - [ThreadPoolExecutor-0_3] - INFO - [ThreadPoolExecutor-0_3] SKIP tlhelp32: File already exists
+2025-07-07 14:23:43,787 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP usbdlib: File already exists
+2025-07-07 14:23:43,787 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP usbpmapi: File already exists
+2025-07-07 14:23:46,054 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP videoagp: File already exists
+2025-07-07 14:23:46,055 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP wdfdevice: File already exists
+2025-07-07 14:23:46,055 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP wdfdriver: File already exists
+2025-07-07 14:23:46,055 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP wdfhwaccess: File already exists
+2025-07-07 14:23:46,056 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP wdfio: File already exists
+2025-07-07 14:23:46,056 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP wdfobject: File already exists
+2025-07-07 14:23:46,056 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP wdfrequest: File already exists
+2025-07-07 14:30:13,152 - [MainThread] - INFO - Finding headers from multiple sources...
+2025-07-07 14:31:59,366 - [MainThread] - INFO - Found 75 headers total (user-mode + kernel)
+2025-07-07 14:31:59,375 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START ata: Getting function URLs...
+2025-07-07 14:31:59,376 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP bcrypt: File already exists
+2025-07-07 14:31:59,377 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP compressapi: File already exists
+2025-07-07 14:31:59,378 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP d3dkmddi: File already exists
+2025-07-07 14:31:59,378 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP dbghelp: File already exists
+2025-07-07 14:31:59,379 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP debugapi: File already exists
+2025-07-07 14:31:59,418 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP dispmprt: File already exists
+2025-07-07 14:31:59,419 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] START dmusicks: Getting function URLs...
+2025-07-07 14:31:59,419 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] START dxgiddi: Getting function URLs...
+2025-07-07 14:32:03,772 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP ata: No functions found
+2025-07-07 14:32:03,773 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START dxgitype: Getting function URLs...
+2025-07-07 14:32:04,893 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP dmusicks: No functions found
+2025-07-07 14:32:04,894 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP errhandlingapi: File already exists
+2025-07-07 14:32:04,895 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP fibersapi: File already exists
+2025-07-07 14:32:04,896 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP fileapi: File already exists
+2025-07-07 14:32:04,896 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP fltkernel: File already exists
+2025-07-07 14:32:04,897 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] START gpio: Getting function URLs...
+2025-07-07 14:32:06,048 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP dxgiddi: No functions found
+2025-07-07 14:32:06,050 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP handleapi: File already exists
+2025-07-07 14:32:06,050 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] START hdaudio: Getting function URLs...
+2025-07-07 14:32:10,546 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP dxgitype: No functions found
+2025-07-07 14:32:10,547 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP heapapi: File already exists
+2025-07-07 14:32:10,548 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP ioaccess: File already exists
+2025-07-07 14:32:10,548 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP jobapi: File already exists
+2025-07-07 14:32:10,548 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START ksmedia: Getting function URLs...
+2025-07-07 14:32:11,705 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP gpio: No functions found
+2025-07-07 14:32:11,705 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP libloaderapi: File already exists
+2025-07-07 14:32:11,706 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP memoryapi: File already exists
+2025-07-07 14:32:11,706 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP miniport: File already exists
+2025-07-07 14:32:11,706 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP minitape: File already exists
+2025-07-07 14:32:11,707 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP namedpipeapi: File already exists
+2025-07-07 14:32:11,707 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP ncrypt: File already exists
+2025-07-07 14:32:11,707 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP ndis: File already exists
+2025-07-07 14:32:11,708 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP netadapter: File already exists
+2025-07-07 14:32:11,708 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] START netpacket: Getting function URLs...
+2025-07-07 14:32:12,753 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP hdaudio: No functions found
+2025-07-07 14:32:12,754 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP netrxqueue: File already exists
+2025-07-07 14:32:12,755 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP nettxqueue: File already exists
+2025-07-07 14:32:12,755 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP ntddk: File already exists
+2025-07-07 14:32:12,756 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP ntifs: File already exists
+2025-07-07 14:32:12,756 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] START parallel: Getting function URLs...
+2025-07-07 14:32:17,083 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP ksmedia: No functions found
+2025-07-07 14:32:17,084 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP pathcch: File already exists
+2025-07-07 14:32:17,084 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP portcls: File already exists
+2025-07-07 14:32:17,085 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP processenv: File already exists
+2025-07-07 14:32:17,085 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP processthreadsapi: File already exists
+2025-07-07 14:32:17,086 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP psapi: File already exists
+2025-07-07 14:32:17,086 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP schannel: File already exists
+2025-07-07 14:32:17,086 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP scsi: File already exists
+2025-07-07 14:32:17,087 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP securitybaseapi: File already exists
+2025-07-07 14:32:17,087 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP sercx: File already exists
+2025-07-07 14:32:17,087 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP setupapi: File already exists
+2025-07-07 14:32:17,088 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP shellapi: File already exists
+2025-07-07 14:32:17,088 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP shlwapi: File already exists
+2025-07-07 14:32:17,088 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP shobjidl_core: File already exists
+2025-07-07 14:32:17,089 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP spb: File already exists
+2025-07-07 14:32:17,089 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP sspi: File already exists
+2025-07-07 14:32:17,089 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP storport: File already exists
+2025-07-07 14:32:17,090 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP synchapi: File already exists
+2025-07-07 14:32:17,090 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP threadpoolapiset: File already exists
+2025-07-07 14:32:17,090 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP threadpoollegacyapiset: File already exists
+2025-07-07 14:32:17,091 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP tlhelp32: File already exists
+2025-07-07 14:32:17,091 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START usb: Getting function URLs...
+2025-07-07 14:32:19,056 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP netpacket: No functions found
+2025-07-07 14:32:19,057 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP usbdlib: File already exists
+2025-07-07 14:32:19,057 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP usbpmapi: File already exists
+2025-07-07 14:32:19,058 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] START usbspec: Getting function URLs...
+2025-07-07 14:32:19,201 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP parallel: No functions found
+2025-07-07 14:32:19,202 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP videoagp: File already exists
+2025-07-07 14:32:19,202 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP wdfdevice: File already exists
+2025-07-07 14:32:19,203 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP wdfdriver: File already exists
+2025-07-07 14:32:19,203 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP wdfhwaccess: File already exists
+2025-07-07 14:32:19,203 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP wdfio: File already exists
+2025-07-07 14:32:19,204 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP wdfobject: File already exists
+2025-07-07 14:32:19,204 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] SKIP wdfrequest: File already exists
+2025-07-07 14:32:19,204 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] START wdm: Getting function URLs...
+2025-07-07 14:32:23,702 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] SKIP usb: No functions found
+2025-07-07 14:32:23,703 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START winbase: Getting function URLs...
+2025-07-07 14:32:24,897 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] SKIP usbspec: No functions found
+2025-07-07 14:32:24,898 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] START wincrypt: Getting function URLs...
+2025-07-07 14:32:26,284 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] PROCESS wdm: Found 1005 functions, extracting signatures...
+2025-07-07 14:32:26,285 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 1/1005
+2025-07-07 14:32:27,452 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] PROCESS winbase: Found 470 functions, extracting signatures...
+2025-07-07 14:32:27,452 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 1/470
+2025-07-07 14:32:28,593 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] PROCESS wincrypt: Found 263 functions, extracting signatures...
+2025-07-07 14:32:28,593 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 1/263
+2025-07-07 14:32:58,644 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 11/1005
+2025-07-07 14:32:59,671 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 11/470
+2025-07-07 14:33:01,109 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 11/263
+2025-07-07 14:33:31,051 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 21/1005
+2025-07-07 14:33:32,042 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 21/470
+2025-07-07 14:33:33,205 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 21/263
+2025-07-07 14:34:03,875 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 31/1005
+2025-07-07 14:34:04,915 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 31/470
+2025-07-07 14:34:05,886 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 31/263
+2025-07-07 14:34:37,464 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 41/1005
+2025-07-07 14:34:38,468 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 41/470
+2025-07-07 14:34:39,727 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 41/263
+2025-07-07 14:35:09,993 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 51/1005
+2025-07-07 14:35:11,259 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 51/470
+2025-07-07 14:35:12,308 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 51/263
+2025-07-07 14:35:43,316 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 61/1005
+2025-07-07 14:35:44,337 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 61/470
+2025-07-07 14:35:45,177 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 61/263
+2025-07-07 14:36:15,777 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 71/1005
+2025-07-07 14:36:16,971 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 71/470
+2025-07-07 14:36:18,242 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 71/263
+2025-07-07 14:36:49,361 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 81/1005
+2025-07-07 14:36:50,485 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 81/470
+2025-07-07 14:36:51,522 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 81/263
+2025-07-07 14:37:22,233 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 91/1005
+2025-07-07 14:37:23,349 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 91/470
+2025-07-07 14:37:24,380 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 91/263
+2025-07-07 14:37:55,506 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 101/1005
+2025-07-07 14:37:56,841 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 101/470
+2025-07-07 14:37:57,550 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 101/263
+2025-07-07 14:38:28,607 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 111/1005
+2025-07-07 14:38:29,597 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 111/470
+2025-07-07 14:38:30,687 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 111/263
+2025-07-07 14:39:01,668 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 121/1005
+2025-07-07 14:39:02,684 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 121/470
+2025-07-07 14:39:03,923 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 121/263
+2025-07-07 14:39:34,737 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 131/1005
+2025-07-07 14:39:35,872 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 131/470
+2025-07-07 14:39:37,096 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 131/263
+2025-07-07 14:40:07,500 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 141/1005
+2025-07-07 14:40:08,730 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 141/470
+2025-07-07 14:40:09,862 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 141/263
+2025-07-07 14:40:40,677 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 151/1005
+2025-07-07 14:40:41,802 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 151/470
+2025-07-07 14:40:42,835 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 151/263
+2025-07-07 14:41:13,755 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 161/1005
+2025-07-07 14:41:14,840 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 161/470
+2025-07-07 14:41:16,011 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 161/263
+2025-07-07 14:41:47,219 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 171/1005
+2025-07-07 14:41:48,265 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 171/470
+2025-07-07 14:41:49,497 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 171/263
+2025-07-07 14:42:20,581 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 181/1005
+2025-07-07 14:42:21,764 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 181/470
+2025-07-07 14:42:22,887 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 181/263
+2025-07-07 14:42:54,135 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 191/1005
+2025-07-07 14:42:55,030 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 191/470
+2025-07-07 14:42:56,155 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 191/263
+2025-07-07 14:43:27,796 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 201/1005
+2025-07-07 14:43:28,835 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 201/470
+2025-07-07 14:43:29,953 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 201/263
+2025-07-07 14:44:00,846 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 211/1005
+2025-07-07 14:44:02,003 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 211/470
+2025-07-07 14:44:03,048 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 211/263
+2025-07-07 14:44:33,455 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 221/1005
+2025-07-07 14:44:34,673 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 221/470
+2025-07-07 14:44:35,690 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 221/263
+2025-07-07 14:45:06,637 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 231/1005
+2025-07-07 14:45:07,484 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 231/470
+2025-07-07 14:45:09,047 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 231/263
+2025-07-07 14:45:39,997 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 241/1005
+2025-07-07 14:45:41,124 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 241/470
+2025-07-07 14:45:42,147 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 241/263
+2025-07-07 14:46:12,752 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 251/1005
+2025-07-07 14:46:13,879 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 251/470
+2025-07-07 14:46:15,114 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 251/263
+2025-07-07 14:46:46,024 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 261/1005
+2025-07-07 14:46:46,855 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 261/470
+2025-07-07 14:46:48,022 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wincrypt: Processing function 261/263
+2025-07-07 14:46:57,920 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] OK wincrypt: 263 functions saved
+2025-07-07 14:46:57,921 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] START wingdi: Getting function URLs...
+2025-07-07 14:47:01,660 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] PROCESS wingdi: Found 377 functions, extracting signatures...
+2025-07-07 14:47:01,661 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 1/377
+2025-07-07 14:47:18,815 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 271/1005
+2025-07-07 14:47:20,106 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 271/470
+2025-07-07 14:47:34,373 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 11/377
+2025-07-07 14:47:52,134 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 281/1005
+2025-07-07 14:47:53,322 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 281/470
+2025-07-07 14:48:07,567 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 21/377
+2025-07-07 14:48:25,062 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 291/1005
+2025-07-07 14:48:26,008 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 291/470
+2025-07-07 14:48:40,513 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 31/377
+2025-07-07 14:48:58,550 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 301/1005
+2025-07-07 14:48:59,671 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 301/470
+2025-07-07 14:49:13,934 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 41/377
+2025-07-07 14:49:31,668 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 311/1005
+2025-07-07 14:49:32,851 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 311/470
+2025-07-07 14:49:46,994 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 51/377
+2025-07-07 14:50:04,894 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 321/1005
+2025-07-07 14:50:05,722 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 321/470
+2025-07-07 14:50:20,049 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 61/377
+2025-07-07 14:50:37,465 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 331/1005
+2025-07-07 14:50:38,505 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 331/470
+2025-07-07 14:50:52,519 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 71/377
+2025-07-07 14:51:10,462 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 341/1005
+2025-07-07 14:51:12,683 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 341/470
+2025-07-07 14:51:24,777 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 81/377
+2025-07-07 14:51:43,613 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 351/1005
+2025-07-07 14:51:45,758 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 351/470
+2025-07-07 14:51:58,096 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 91/377
+2025-07-07 14:52:16,892 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 361/1005
+2025-07-07 14:52:19,152 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 361/470
+2025-07-07 14:52:31,128 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 101/377
+2025-07-07 14:52:50,283 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 371/1005
+2025-07-07 14:52:52,833 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 371/470
+2025-07-07 14:53:04,407 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 111/377
+2025-07-07 14:53:23,299 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 381/1005
+2025-07-07 14:53:25,100 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 381/470
+2025-07-07 14:53:37,169 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 121/377
+2025-07-07 14:53:56,219 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 391/1005
+2025-07-07 14:53:58,264 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 391/470
+2025-07-07 14:54:10,757 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 131/377
+2025-07-07 14:54:29,499 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 401/1005
+2025-07-07 14:54:31,750 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 401/470
+2025-07-07 14:54:43,897 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 141/377
+2025-07-07 14:55:02,776 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 411/1005
+2025-07-07 14:55:04,830 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 411/470
+2025-07-07 14:55:17,015 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 151/377
+2025-07-07 14:55:35,549 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 421/1005
+2025-07-07 14:55:39,917 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 421/470
+2025-07-07 14:55:48,474 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 161/377
+2025-07-07 14:56:07,193 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 431/1005
+2025-07-07 14:56:12,614 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 431/470
+2025-07-07 14:56:21,427 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 171/377
+2025-07-07 14:56:40,269 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 441/1005
+2025-07-07 14:56:45,845 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 441/470
+2025-07-07 14:56:54,504 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 181/377
+2025-07-07 14:57:13,233 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 451/1005
+2025-07-07 14:57:18,967 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 451/470
+2025-07-07 14:57:27,471 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 191/377
+2025-07-07 14:57:46,189 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 461/1005
+2025-07-07 14:57:51,618 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winbase: Processing function 461/470
+2025-07-07 14:58:00,144 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 201/377
+2025-07-07 14:58:18,872 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 471/1005
+2025-07-07 14:58:24,225 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] OK winbase: 470 functions saved
+2025-07-07 14:58:24,225 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START winnt: Getting function URLs...
+2025-07-07 14:58:28,230 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] PROCESS winnt: Found 106 functions, extracting signatures...
+2025-07-07 14:58:28,231 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 1/106
+2025-07-07 14:58:33,427 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 211/377
+2025-07-07 14:58:51,951 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 481/1005
+2025-07-07 14:59:01,176 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 11/106
+2025-07-07 14:59:06,085 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 221/377
+2025-07-07 14:59:24,928 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 491/1005
+2025-07-07 14:59:33,834 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 21/106
+2025-07-07 14:59:39,372 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 231/377
+2025-07-07 14:59:57,699 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 501/1005
+2025-07-07 15:00:06,698 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 31/106
+2025-07-07 15:00:12,238 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 241/377
+2025-07-07 15:00:30,887 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 511/1005
+2025-07-07 15:00:39,671 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 41/106
+2025-07-07 15:00:45,209 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 251/377
+2025-07-07 15:01:04,141 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 521/1005
+2025-07-07 15:01:12,850 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 51/106
+2025-07-07 15:01:18,285 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 261/377
+2025-07-07 15:01:37,035 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 531/1005
+2025-07-07 15:01:45,519 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 61/106
+2025-07-07 15:01:50,948 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 271/377
+2025-07-07 15:02:10,097 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 541/1005
+2025-07-07 15:02:19,052 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 71/106
+2025-07-07 15:02:24,022 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 281/377
+2025-07-07 15:02:42,450 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 551/1005
+2025-07-07 15:02:51,160 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 81/106
+2025-07-07 15:02:56,587 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 291/377
+2025-07-07 15:03:15,836 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 561/1005
+2025-07-07 15:03:24,844 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 91/106
+2025-07-07 15:03:30,276 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 301/377
+2025-07-07 15:03:49,221 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 571/1005
+2025-07-07 15:03:57,616 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winnt: Processing function 101/106
+2025-07-07 15:04:03,184 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 311/377
+2025-07-07 15:04:17,708 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] OK winnt: 106 functions saved
+2025-07-07 15:04:17,709 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START winreg: Getting function URLs...
+2025-07-07 15:04:21,164 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] PROCESS winreg: Found 88 functions, extracting signatures...
+2025-07-07 15:04:21,164 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 1/88
+2025-07-07 15:04:21,981 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 581/1005
+2025-07-07 15:04:36,207 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 321/377
+2025-07-07 15:04:53,433 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 11/88
+2025-07-07 15:04:54,449 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 591/1005
+2025-07-07 15:05:08,488 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 331/377
+2025-07-07 15:05:26,229 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 21/88
+2025-07-07 15:05:27,226 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 601/1005
+2025-07-07 15:05:41,174 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 341/377
+2025-07-07 15:05:58,656 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 31/88
+2025-07-07 15:05:59,837 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 611/1005
+2025-07-07 15:06:14,122 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 351/377
+2025-07-07 15:06:31,740 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 41/88
+2025-07-07 15:06:32,868 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 621/1005
+2025-07-07 15:06:46,783 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 361/377
+2025-07-07 15:07:04,600 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 51/88
+2025-07-07 15:07:05,720 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 631/1005
+2025-07-07 15:07:15,768 - [ThreadPoolExecutor-0_2] - WARNING - No syntax found for https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializerundownprotectioncacheawareex
+2025-07-07 15:07:19,960 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] wingdi: Processing function 371/377
+2025-07-07 15:07:37,681 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 61/88
+2025-07-07 15:07:38,780 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 641/1005
+2025-07-07 15:07:43,417 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] OK wingdi: 377 functions saved
+2025-07-07 15:07:43,418 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] START winuser: Getting function URLs...
+2025-07-07 15:07:47,429 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] PROCESS winuser: Found 758 functions, extracting signatures...
+2025-07-07 15:07:47,429 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 1/758
+2025-07-07 15:08:11,366 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 71/88
+2025-07-07 15:08:12,482 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 651/1005
+2025-07-07 15:08:20,066 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 11/758
+2025-07-07 15:08:44,035 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] winreg: Processing function 81/88
+2025-07-07 15:08:45,008 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 661/1005
+2025-07-07 15:08:52,838 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 21/758
+2025-07-07 15:09:10,679 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] OK winreg: 88 functions saved
+2025-07-07 15:09:10,680 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START wow64apiset: Getting function URLs...
+2025-07-07 15:09:14,113 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] PROCESS wow64apiset: Found 14 functions, extracting signatures...
+2025-07-07 15:09:14,114 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wow64apiset: Processing function 1/14
+2025-07-07 15:09:18,437 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 671/1005
+2025-07-07 15:09:26,015 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 31/758
+2025-07-07 15:09:47,118 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wow64apiset: Processing function 11/14
+2025-07-07 15:09:51,615 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 681/1005
+2025-07-07 15:09:59,297 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 41/758
+2025-07-07 15:10:00,427 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] OK wow64apiset: 14 functions saved
+2025-07-07 15:10:00,428 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] START wtsapi32: Getting function URLs...
+2025-07-07 15:10:04,015 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] PROCESS wtsapi32: Found 62 functions, extracting signatures...
+2025-07-07 15:10:04,015 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wtsapi32: Processing function 1/62
+2025-07-07 15:10:24,895 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 691/1005
+2025-07-07 15:10:32,479 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 51/758
+2025-07-07 15:10:37,190 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wtsapi32: Processing function 11/62
+2025-07-07 15:10:57,863 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 701/1005
+2025-07-07 15:11:05,754 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 61/758
+2025-07-07 15:11:10,458 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wtsapi32: Processing function 21/62
+2025-07-07 15:11:31,608 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 711/1005
+2025-07-07 15:11:39,440 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 71/758
+2025-07-07 15:11:44,293 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wtsapi32: Processing function 31/62
+2025-07-07 15:12:06,111 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 721/1005
+2025-07-07 15:12:11,496 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 81/758
+2025-07-07 15:12:18,243 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wtsapi32: Processing function 41/62
+2025-07-07 15:12:39,241 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 731/1005
+2025-07-07 15:12:43,656 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 91/758
+2025-07-07 15:12:51,553 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wtsapi32: Processing function 51/62
+2025-07-07 15:13:12,270 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 741/1005
+2025-07-07 15:13:16,826 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 101/758
+2025-07-07 15:13:24,766 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] wtsapi32: Processing function 61/62
+2025-07-07 15:13:31,490 - [ThreadPoolExecutor-0_0] - INFO - [ThreadPoolExecutor-0_0] OK wtsapi32: 62 functions saved
+2025-07-07 15:13:40,994 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 751/1005
+2025-07-07 15:13:44,243 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 111/758
+2025-07-07 15:14:02,919 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 761/1005
+2025-07-07 15:14:06,295 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 121/758
+2025-07-07 15:14:24,723 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 771/1005
+2025-07-07 15:14:27,993 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 131/758
+2025-07-07 15:14:47,250 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 781/1005
+2025-07-07 15:14:50,455 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 141/758
+2025-07-07 15:15:11,201 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 151/758
+2025-07-07 15:15:22,188 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 161/758
+2025-07-07 15:15:23,680 - [ThreadPoolExecutor-0_2] - WARNING - Timeout (attempt 1/2) for: https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/wdm/nf-wdm-write_port_buffer_ulong
+2025-07-07 15:15:34,181 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 171/758
+2025-07-07 15:15:41,352 - [ThreadPoolExecutor-0_2] - WARNING - Timeout (attempt 2/2) for: https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/wdm/nf-wdm-write_port_buffer_ulong
+2025-07-07 15:15:41,352 - [ThreadPoolExecutor-0_2] - ERROR - Max timeouts reached for: https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/wdm/nf-wdm-write_port_buffer_ulong
+2025-07-07 15:15:41,353 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 791/1005
+2025-07-07 15:15:46,536 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 181/758
+2025-07-07 15:15:57,701 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 191/758
+2025-07-07 15:15:57,961 - [ThreadPoolExecutor-0_2] - WARNING - Timeout (attempt 1/2) for: https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/wdm/nf-wdm-removeentrylist
+2025-07-07 15:16:17,353 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 201/758
+2025-07-07 15:16:20,627 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 801/1005
+2025-07-07 15:16:39,366 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 211/758
+2025-07-07 15:16:42,544 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 811/1005
+2025-07-07 15:17:01,189 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 221/758
+2025-07-07 15:17:04,356 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 821/1005
+2025-07-07 15:17:23,265 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 231/758
+2025-07-07 15:17:26,614 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 831/1005
+2025-07-07 15:17:45,294 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 241/758
+2025-07-07 15:17:48,592 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 841/1005
+2025-07-07 15:18:07,334 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 251/758
+2025-07-07 15:18:10,714 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 851/1005
+2025-07-07 15:18:29,451 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 261/758
+2025-07-07 15:18:32,947 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 861/1005
+2025-07-07 15:18:51,981 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 271/758
+2025-07-07 15:18:54,950 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 871/1005
+2025-07-07 15:19:13,906 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 281/758
+2025-07-07 15:19:17,177 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 881/1005
+2025-07-07 15:19:35,600 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 291/758
+2025-07-07 15:19:38,939 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 891/1005
+2025-07-07 15:19:57,115 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 301/758
+2025-07-07 15:20:00,387 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 901/1005
+2025-07-07 15:20:19,633 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 311/758
+2025-07-07 15:20:22,905 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 911/1005
+2025-07-07 15:20:42,041 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 321/758
+2025-07-07 15:20:45,494 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 921/1005
+2025-07-07 15:21:04,080 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 331/758
+2025-07-07 15:21:07,557 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 931/1005
+2025-07-07 15:21:26,816 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 341/758
+2025-07-07 15:21:29,978 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 941/1005
+2025-07-07 15:21:48,517 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 351/758
+2025-07-07 15:21:51,793 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 951/1005
+2025-07-07 15:22:10,291 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 361/758
+2025-07-07 15:22:13,514 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 961/1005
+2025-07-07 15:22:32,139 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 371/758
+2025-07-07 15:22:35,314 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 971/1005
+2025-07-07 15:22:54,256 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 381/758
+2025-07-07 15:22:57,534 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 981/1005
+2025-07-07 15:23:16,732 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 391/758
+2025-07-07 15:23:19,653 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 991/1005
+2025-07-07 15:23:38,596 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 401/758
+2025-07-07 15:23:42,035 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] wdm: Processing function 1001/1005
+2025-07-07 15:23:52,894 - [ThreadPoolExecutor-0_2] - INFO - [ThreadPoolExecutor-0_2] OK wdm: 1003 functions saved
+2025-07-07 15:23:57,541 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 411/758
+2025-07-07 15:24:08,503 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 421/758
+2025-07-07 15:24:19,451 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 431/758
+2025-07-07 15:24:30,161 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 441/758
+2025-07-07 15:24:42,393 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 451/758
+2025-07-07 15:24:52,537 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 461/758
+2025-07-07 15:25:03,487 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 471/758
+2025-07-07 15:25:14,541 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 481/758
+2025-07-07 15:25:25,602 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 491/758
+2025-07-07 15:25:37,266 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 501/758
+2025-07-07 15:25:48,130 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 511/758
+2025-07-07 15:25:58,979 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 521/758
+2025-07-07 15:26:09,734 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 531/758
+2025-07-07 15:26:20,690 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 541/758
+2025-07-07 15:26:31,743 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 551/758
+2025-07-07 15:26:42,701 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 561/758
+2025-07-07 15:26:53,559 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 571/758
+2025-07-07 15:27:04,325 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 581/758
+2025-07-07 15:27:15,141 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 591/758
+2025-07-07 15:27:26,305 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 601/758
+2025-07-07 15:27:37,286 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 611/758
+2025-07-07 15:27:48,236 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 621/758
+2025-07-07 15:27:59,048 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 631/758
+2025-07-07 15:28:10,080 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 641/758
+2025-07-07 15:28:20,918 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 651/758
+2025-07-07 15:28:31,974 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 661/758
+2025-07-07 15:28:43,137 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 671/758
+2025-07-07 15:28:54,087 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 681/758
+2025-07-07 15:29:05,090 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 691/758
+2025-07-07 15:29:16,098 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 701/758
+2025-07-07 15:29:26,752 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 711/758
+2025-07-07 15:29:37,819 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 721/758
+2025-07-07 15:29:48,866 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 731/758
+2025-07-07 15:30:00,026 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 741/758
+2025-07-07 15:30:10,876 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] winuser: Processing function 751/758
+2025-07-07 15:30:19,596 - [ThreadPoolExecutor-0_1] - INFO - [ThreadPoolExecutor-0_1] OK winuser: 758 functions saved
+2025-07-07 15:30:19,598 - [MainThread] - INFO - 📊 Summary saved to windows_api_functions_only\functions_only_summary.json
+2025-07-07 20:43:23,271 - [MainThread] - INFO - Finding headers from multiple sources...
