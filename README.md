@@ -1,10 +1,10 @@
-# WraithTrace API Tracer
+# ArgusTrace API Tracer
 
 ## Current Status: Pre-Alpha
 This tool is in early development. Most components are experimental and subject to change.
 
 ## Tracing Methods
-WraithTrace currently implements two tracing techniques:
+ArgusTrace currently implements two tracing techniques:
 
 1. **Breakpoint-based Tracing**
    - Hooks Windows API functions via DLL breakpoints
@@ -18,7 +18,7 @@ WraithTrace currently implements two tracing techniques:
 
 *Note: These methods are independent - the tool functions with either one implemented.*
 
-# WraithTrace Build Guide
+# ArgusTrace Build Guide
 
 ## Prerequisites
 - **Visual Studio 2022** (with C++ tools)
@@ -34,7 +34,7 @@ WraithTrace currently implements two tracing techniques:
 
 ## Usage
 ```sh
-WraithTrace.exe [-c CHOICE] [-d dll_headers] <victim.exe>
+tracer32/64.exe [-c CHOICE] [-d dll_headers] <victim.exe>
 ```
 
 ## Important Note
