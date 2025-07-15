@@ -18,6 +18,20 @@ WraithTrace currently implements two tracing techniques:
 
 *Note: These methods are independent - the tool functions with either one implemented.*
 
+# WraithTrace Build Guide
+
+## Prerequisites
+- **Visual Studio 2022** (with C++ tools)
+- **Windows SDK** (latest version recommended)
+- **DynamoRIO** (if building DynamoRIO tracer)
+
+## Quick Build (Batch Method)
+1. Open **CMD**
+2. Navigate to project directory
+3. Run:
+   ```bat
+   build_tracer.bat
+
 ## Usage
 ```sh
 WraithTrace.exe [--pid PROCESS_ID] [--output FILE] [--log] [OPTIONS]
