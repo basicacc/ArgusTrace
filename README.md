@@ -34,7 +34,7 @@ WraithTrace currently implements two tracing techniques:
 
 ## Usage
 ```sh
-WraithTrace.exe [--pid PROCESS_ID] [--output FILE] [--log] [OPTIONS]
+WraithTrace.exe [-c CHOICE] [-d dll_headers] <victim.exe>
 ```
 
 ## Important Note
