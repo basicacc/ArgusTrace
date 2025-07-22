@@ -26,20 +26,22 @@ Status: **Stable (breakpoint-based tracing)**, **Experimental (DynamoRIO instrum
 
 ## Tracing Methods
 
+ArgusTrace currently implements two tracing techniques:
+
 ### Breakpoint-Based Tracing (Stable)
 
-- Hooks functions by setting breakpoints at known API entry points
-- Supports multiple Windows DLLs (e.g., kernel32.dll, ntdll.dll, others)
-- API functions are defined via header files in `dll_headers`, controlled by `argus.config`
-- Child process creation is monitored and traced
-- Modules are enumerated and breakpoints set after the entry point is reached
-- All previously unused or broken command-line parameters have been removed
+- Hooks functions by setting breakpoints at known API entry points  
+- Supports multiple Windows DLLs (e.g., kernel32.dll, ntdll.dll, others)  
+- API functions are defined via header files in `dll_headers`, controlled by `argus.config`  
+- Child process creation is monitored and traced  
+- Modules are enumerated and breakpoints set after the entry point is reached  
+- All previously unused or broken command-line parameters have been removed  
 
 ### DynamoRIO Instrumentation (Experimental)
 
-- Utilizes [DynamoRIO](https://dynamorio.org/) to inject tracing logic into the target process
-- Now avoids tracing itself during runtime
-- Can be built optionally if desired
+- Utilizes [DynamoRIO](https://dynamorio.org/) to inject tracing logic into the target process  
+- Now avoids tracing itself during runtime  
+- Can be built optionally if desired  
 
 ---
 
@@ -67,7 +69,11 @@ This will compile both x86 and x64 versions and place the resulting executables 
 ## Usage
 
 ```sh
+<<<<<<< HEAD
 tracer32.exe | tracer64.exe [OPTIONS] <victim.exe>
+=======
+tracer32/64.exe [-c CHOICE] [-d dll_headers] <victim.exe>
+>>>>>>> 5a669873e6d4e3027c41d6d48abadd16998678f6
 ```
 
 ## Command-Line Options
