@@ -69,11 +69,7 @@ This will compile both x86 and x64 versions and place the resulting executables 
 ## Usage
 
 ```sh
-<<<<<<< HEAD
 tracer32.exe | tracer64.exe [OPTIONS] <victim.exe>
-=======
-tracer32/64.exe [-c CHOICE] [-d dll_headers] <victim.exe>
->>>>>>> 5a669873e6d4e3027c41d6d48abadd16998678f6
 ```
 
 ## Command-Line Options
