@@ -76,13 +76,12 @@ tracer32.exe | tracer64.exe [OPTIONS] <victim.exe>
 
 | Option            | Description                                                                 |
 |------------------|-----------------------------------------------------------------------------|
-| `-c`, `--choice`  | Select tracing method (`bp` for breakpoint, `dr` for DynamoRIO)            |
+| `-c`, `--choice`  | Select tracing method                                                      |
 | `-d`, `--dll-headers` | Path to directory containing API header files                         |
 | `-f`, `--file`    | Output trace logs to specified file                                        |
 | `-p`, `--pid`     | Attach to a running process by PID                                         |
 | `-s`, `--sleep`   | Sleep after process creation (useful for ScyllaHide)                       |
 | `--trace-level`   | Set child process tracing depth: `-1` disables, `0` is unlimited, `1+` for depth |
-| `-i`, `--interactive` | Enable interactive console mode                                       |
 
 > **Note**: `argus.config` must be present inside the specified `dll_headers` directory when using breakpoint-based tracing. It defines the list of DLLs and functions to trace.
 
