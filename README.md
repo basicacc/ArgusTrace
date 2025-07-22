@@ -1,4 +1,4 @@
-# ArgusTrace API Tracer
+# ArgusTrace
 
 ## Overview
 
