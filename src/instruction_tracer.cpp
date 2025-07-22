@@ -15,7 +15,6 @@ static void *mutex;
 static bool modules_enumerated = false;
 static app_pc main_entry_point = NULL;
 
-// Function to get module name for a given address
 static const char* get_module_name_for_address(app_pc addr)
 {
     module_data_t *mod = dr_lookup_module(addr);
@@ -25,7 +24,6 @@ static const char* get_module_name_for_address(app_pc addr)
             module_name = mod->names.module_name;
         }
         
-        // Create a static buffer to hold the result
         static char module_buffer[256];
         if (module_name) {
             strncpy(module_buffer, module_name, sizeof(module_buffer) - 1);
@@ -41,7 +39,6 @@ static const char* get_module_name_for_address(app_pc addr)
     return "unknown";
 }
 
-// Function to enumerate exports from a specific module
 static void enumerate_module_exports(module_data_t *mod, const char *module_name)
 {
     if (!mod) return;
@@ -50,7 +47,6 @@ static void enumerate_module_exports(module_data_t *mod, const char *module_name
     app_pc base = mod->start;
     
     __try {
-        // Get the PE headers
         IMAGE_DOS_HEADER *dos_header = (IMAGE_DOS_HEADER *)base;
         
         if (dos_header->e_magic != IMAGE_DOS_SIGNATURE) {
@@ -76,11 +72,9 @@ static void enumerate_module_exports(module_data_t *mod, const char *module_name
         DWORD *addr_array = (DWORD *)(base + exports->AddressOfFunctions);
         WORD *ordinal_array = (WORD *)(base + exports->AddressOfNameOrdinals);
         
-        // Enumerate all exported functions
-        for (DWORD i = 0; i < exports->NumberOfNames && i < 10000; i++) { // Safety limit
+        for (DWORD i = 0; i < exports->NumberOfNames && i < 10000; i++) {
             char *func_name = (char *)(base + name_array[i]);
             
-            // Basic validation of function name pointer
             if ((app_pc)func_name < base || (app_pc)func_name > mod->end) {
                 continue;
             }
@@ -90,7 +84,6 @@ static void enumerate_module_exports(module_data_t *mod, const char *module_name
                 DWORD func_rva = addr_array[ordinal];
                 app_pc func_addr = base + func_rva;
                 
-                // Check if it's a forwarded export
                 if (func_rva >= export_dir->VirtualAddress && 
                     func_rva < export_dir->VirtualAddress + export_dir->Size) {
                     dr_fprintf(modules_file, "%p %s!%s (forwarded)\n", func_addr, module_name, func_name);
@@ -109,7 +102,6 @@ static void enumerate_module_exports(module_data_t *mod, const char *module_name
 #endif
 }
 
-// Function to enumerate all loaded modules and their exports
 static void enumerate_all_modules(void)
 {
     dr_module_iterator_t *iter = dr_module_iterator_start();
@@ -132,10 +124,8 @@ static void enumerate_all_modules(void)
                 module_name = "unknown";
             }
             
-            // Log basic module info
             dr_fprintf(modules_file, "Module %d: %s\n", module_count, module_name);
             
-            // Enumerate exports from this module
             enumerate_module_exports(mod, module_name);
             
             dr_free_module_data(mod);
@@ -145,12 +135,11 @@ static void enumerate_all_modules(void)
     dr_module_iterator_stop(iter);
 }
 
-// Check if it hit the entry point and enumerate modules
 static void check_entry_point(app_pc addr)
 {
     if (!modules_enumerated && main_entry_point && addr == main_entry_point) {
         dr_mutex_lock(mutex);
-        if (!modules_enumerated) {  // Double-check with lock
+        if (!modules_enumerated) {
             modules_enumerated = true;
             enumerate_all_modules();
         }
@@ -160,26 +149,20 @@ static void check_entry_point(app_pc addr)
 
 static void log_instruction(app_pc addr)
 {
-    // Check if this is the entry point
     check_entry_point(addr);
     
-    // Decode the instruction to get disassembly
     instr_t instr;
     instr_init(dr_get_current_drcontext(), &instr);
     
-    // Decode instruction at this address
     app_pc next_pc = decode(dr_get_current_drcontext(), addr, &instr);
     
     if (next_pc != NULL) {
-        // Get disassembly string
         char disasm_buf[256];
         instr_disassemble_to_buffer(dr_get_current_drcontext(), &instr, 
                                   disasm_buf, sizeof(disasm_buf));
         
-        // Get module name for this address
         const char *module_name = get_module_name_for_address(addr);
         
-        // Thread-safe logging with module name
         dr_mutex_lock(mutex);
         dr_fprintf(log_file, "%s!%p %s\n", module_name, addr, disasm_buf);
         dr_mutex_unlock(mutex);
@@ -188,14 +171,11 @@ static void log_instruction(app_pc addr)
     instr_free(dr_get_current_drcontext(), &instr);
 }
 
-// Analysis function called for each instruction
 static dr_emit_flags_t event_app_instruction(void *drcontext, void *tag, instrlist_t *bb,
                                             instr_t *instr, bool for_trace, bool translating,
                                             void *user_data)
 {
-    // Only instrument application instructions
     if (instr_is_app(instr)) {
-        // Insert call to log_instruction before this instruction
         dr_insert_clean_call(drcontext, bb, instr, (void *)log_instruction,
                            false, 1, OPND_CREATE_INTPTR(instr_get_app_pc(instr)));
     }
@@ -203,38 +183,30 @@ static dr_emit_flags_t event_app_instruction(void *drcontext, void *tag, instrli
     return DR_EMIT_DEFAULT;
 }
 
-// Event callback for module load
 static void event_module_load(void *drcontext, const module_data_t *mod, bool loaded)
 {
     if (loaded) {
-        // Check if this is the main executable
         if (mod->start == dr_get_main_module()->start) {
             main_entry_point = mod->entry_point;
         }
     }
 }
 
-// Event callback for process exit
 static void event_exit(void)
 {
-    // Close log files and cleanup
     dr_mutex_destroy(mutex);
     dr_close_file(log_file);
     dr_close_file(modules_file);
     
-    // Cleanup DynamoRIO managers
     drx_exit();
     drmgr_exit();
 }
 
-// Main entry point - DynamoRIO client
 DR_EXPORT void dr_client_main(client_id_t id, int argc, const char *argv[])
 {
-    // Initialize DynamoRIO extension libraries
     drmgr_init();
     drx_init();
     
-    // Open log files
     log_file = dr_open_file("instructions.log", DR_FILE_WRITE_OVERWRITE);
     if (log_file == INVALID_FILE) {
         dr_fprintf(STDERR, "ERROR: Cannot open instructions.log\n");
@@ -248,20 +220,15 @@ DR_EXPORT void dr_client_main(client_id_t id, int argc, const char *argv[])
         return;
     }
     
-    // Create mutex for thread-safe logging
     mutex = dr_mutex_create();
     
-    // Register event callbacks
     dr_register_exit_event(event_exit);
     drmgr_register_module_load_event(event_module_load);
     
-    // Register for instruction-level instrumentation
     drmgr_register_bb_instrumentation_event(NULL, event_app_instruction, NULL);
     
-    // Print startup messages
     dr_fprintf(log_file, "# DynamoRIO Instruction Tracer Started\n");
     
-    // Get main module info
     module_data_t *main_mod = dr_get_main_module();
     if (main_mod) {
         main_entry_point = main_mod->entry_point;

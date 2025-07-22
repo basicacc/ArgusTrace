@@ -9,14 +9,11 @@
 #include <fstream>
 #include <regex>
 #include <algorithm>
-
 #include "headers\globals.h"
 
 std::string ExtractParameterName(const std::string& paramDecl) {
-    // Remove annotations like [in], [out], etc.
     std::string cleaned = paramDecl;
 
-    // Remove anything in brackets
     size_t bracketStart = cleaned.find('[');
     while (bracketStart != std::string::npos) {
         size_t bracketEnd = cleaned.find(']', bracketStart);
@@ -28,21 +25,18 @@ std::string ExtractParameterName(const std::string& paramDecl) {
         }
     }
 
-    // Trim whitespace
     cleaned = std::regex_replace(cleaned, std::regex(R"(^\s+|\s+$)"), "");
 
     if (cleaned.empty()) {
         return "";
     }
 
-    // Look for parameter name - typically the last word
     std::regex nameRegex(R"(\b([a-zA-Z_][a-zA-Z0-9_]*)\s*$)");
     std::smatch match;
 
     if (std::regex_search(cleaned, match, nameRegex)) {
         std::string paramName = match[1].str();
         
-        // Skip type keywords
         if (paramName != "VOID" && paramName != "HANDLE" && paramName != "DWORD" && 
             paramName != "BOOL" && paramName != "CONST" && paramName != "OPTIONAL" &&
             paramName != "CHAR" && paramName != "WCHAR" && paramName != "BYTE" &&
@@ -61,7 +55,6 @@ std::vector<std::string> ParseParameterNames(const std::string& params) {
         return paramNames;
     }
     
-    // Simple comma splitting with bracket awareness
     std::vector<std::string> paramParts;
     std::string current;
     int bracketDepth = 0;
@@ -86,7 +79,6 @@ std::vector<std::string> ParseParameterNames(const std::string& params) {
         paramParts.push_back(current);
     }
     
-    // Extract parameter names from each part
     for (const auto& part : paramParts) {
         std::string paramName = ExtractParameterName(part);
         if (!paramName.empty()) {
@@ -98,7 +90,6 @@ std::vector<std::string> ParseParameterNames(const std::string& params) {
 }
 
 void ParseSingleFunction(const std::string& funcDecl) {
-    // Extract function name - look for pattern: "TYPE NAME("
     std::regex nameRegex(R"(\b(\w+)\s+(\w+)\s*\()");
     std::smatch match;
     
@@ -108,7 +99,6 @@ void ParseSingleFunction(const std::string& funcDecl) {
     
     std::string funcName = match[2].str();
     
-    // Extract parameters - everything between first ( and last )
     size_t startParen = funcDecl.find('(');
     size_t endParen = funcDecl.rfind(')');
     
@@ -130,35 +120,31 @@ int ProcessHeaderFile(const std::string& filename) {
         return -1;
     }
     
-    // Read file line by line instead of loading entire content
     std::string line;
     std::string currentFunction;
     int functionsFound = 0;
     bool inFunction = false;
     int lineCount = 0;
-    const int MAX_LINES = 10000; // Safety limit
+    const int MAX_LINES = 10000;
     
     while (std::getline(file, line) && lineCount < MAX_LINES) {
         lineCount++;
         
-        // Simple line-by-line parsing instead of complex regex
-        line = std::regex_replace(line, std::regex(R"(^\s+|\s+$)"), ""); // trim
+        line = std::regex_replace(line, std::regex(R"(^\s+|\s+$)"), "");
         
         if (line.empty() || line[0] == '/' || line[0] == '*') {
-            continue; // Skip comments and empty lines
+            continue;
         }
         
         if (inFunction) {
             currentFunction += " " + line;
             if (line.find(");") != std::string::npos) {
-                // End of function found
                 ParseSingleFunction(currentFunction);
                 functionsFound++;
                 currentFunction.clear();
                 inFunction = false;
             }
         } else {
-            // Look for function start - simple pattern: "TYPE FUNCTIONNAME("
             if (line.find("(") != std::string::npos && 
                 (line.find("BOOL ") == 0 || line.find("DWORD ") == 0 || 
                     line.find("HANDLE ") == 0 || line.find("LONG ") == 0 ||
@@ -166,11 +152,11 @@ int ProcessHeaderFile(const std::string& filename) {
                     line.find("UINT ") == 0 || line.find("LPVOID ") == 0 ||
                     line.find("__kernel_entry NTSYSCALLAPI NTSTATUS ") == 0 || line.find("HRESULT ") == 0 ||
                     line.find("ULONG ") == 0 || line.find("SIZE_T ") == 0 ||
-                    line.find("FARPROC") == 0 || line.find("NTSYSAPI NTSTATUS ") )) {
+                    line.find("FARPROC") == 0 || line.find("NTSYSAPI NTSTATUS ") == 0 ||
+                    line.find("LSTATUS") == 0)) {
                 
                 currentFunction = line;
                 if (line.find(");") != std::string::npos) {
-                    // Single line function
                     ParseSingleFunction(currentFunction);
                     functionsFound++;
                     currentFunction.clear();
@@ -188,7 +174,6 @@ int ProcessHeaderFile(const std::string& filename) {
 bool LoadSignaturesFromHeaders(const std::string& headerDir) {
     std::wcout << L"Loading function signatures from header directory: " << headerDir.c_str() << std::endl;
     
-    // Find all .h files in the directory
     std::string searchPath = headerDir + "\\*.h";
     WIN32_FIND_DATAA findData;
     HANDLE hFind = FindFirstFileA(searchPath.c_str(), &findData);
@@ -205,7 +190,6 @@ bool LoadSignaturesFromHeaders(const std::string& headerDir) {
         std::string filename = headerDir + "\\" + findData.cFileName;
         std::wcout << L"Processing: " << findData.cFileName << L"... ";
         
-        // Read and parse the header file with timeout protection
         int functionsInFile = ProcessHeaderFile(filename);
         
         if (functionsInFile >= 0) {
@@ -227,9 +211,6 @@ bool LoadSignaturesFromHeaders(const std::string& headerDir) {
 
 bool LoadSignatures(const std::string& headerDir) {
     bool result = LoadSignaturesFromHeaders(headerDir);
-    
-    // Just show a summary, no ugly debug output
     std::wcout << L"Successfully loaded function signatures!" << std::endl;
-    
     return result;
 }

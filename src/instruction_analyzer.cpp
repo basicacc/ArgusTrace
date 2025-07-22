@@ -38,19 +38,15 @@ private:
     std::unordered_map<uintptr_t, FunctionInfo> address_to_function;
     std::vector<FunctionInfo> all_functions;
     
-    // Sorted vector for binary search in findFunctionContaining
-    std::vector<std::pair<uintptr_t, size_t>> sorted_addresses; // address -> index in all_functions
+    std::vector<std::pair<uintptr_t, size_t>> sorted_addresses;
     bool sorted_addresses_valid = false;
     
-    // Cache for repeated address lookups
     mutable std::unordered_map<uintptr_t, FunctionInfo*> containing_cache;
     
-    // Helper function to convert hex string to uintptr_t
     uintptr_t hexStringToAddress(const std::string& hex_str) {
         std::stringstream ss;
         uintptr_t address;
         
-        // Remove "0x" prefix if present
         std::string clean_hex = hex_str;
         if (clean_hex.length() > 2 && (clean_hex.substr(0, 2) == "0x" || clean_hex.substr(0, 2) == "0X")) {
             clean_hex = clean_hex.substr(2);
@@ -61,7 +57,6 @@ private:
         return address;
     }
     
-    // Helper function to trim whitespace
     std::string trim(const std::string& str) {
         size_t first = str.find_first_not_of(" \t\r\n");
         if (first == std::string::npos) return "";
@@ -69,7 +64,6 @@ private:
         return str.substr(first, (last - first + 1));
     }
     
-    // Helper function to check if string ends with suffix
     bool endsWith(const std::string& str, const std::string& suffix) const {
         if (str.length() >= suffix.length()) {
             return str.compare(str.length() - suffix.length(), suffix.length(), suffix) == 0;
@@ -77,7 +71,6 @@ private:
         return false;
     }
     
-    // Build sorted addresses for binary search
     void buildSortedAddresses() {
         if (sorted_addresses_valid) return;
         
@@ -90,47 +83,39 @@ private:
         
         std::sort(sorted_addresses.begin(), sorted_addresses.end());
         sorted_addresses_valid = true;
-        containing_cache.clear(); // Clear cache when rebuilding
+        containing_cache.clear();
     }
 
 public:
-    // Helper function to check if module is an executable
     bool isExecutable(const std::string& module_name) const {
         std::string lower_module = module_name;
         std::transform(lower_module.begin(), lower_module.end(), lower_module.begin(), ::tolower);
         return endsWith(lower_module, ".exe");
     }
     
-    // Parse instruction line in format: module_name!address disassembly
     InstructionInfo parseInstructionLine(const std::string& line) {
         InstructionInfo inst_info;
         
-        // Find the exclamation mark that separates module from address
         size_t exclamation_pos = line.find('!');
         if (exclamation_pos == std::string::npos) {
-            return inst_info; // Invalid format
+            return inst_info;
         }
         
-        // Extract module name
         inst_info.module_name = line.substr(0, exclamation_pos);
         
-        // Find the space that separates address from disassembly
         size_t space_pos = line.find(' ', exclamation_pos);
         if (space_pos == std::string::npos) {
-            return inst_info; // Invalid format
+            return inst_info;
         }
         
-        // Extract address
         std::string address_str = line.substr(exclamation_pos + 1, space_pos - exclamation_pos - 1);
         inst_info.address = hexStringToAddress(address_str);
         
-        // Extract disassembly
         inst_info.disassembly = trim(line.substr(space_pos + 1));
         
         return inst_info;
     }
     
-    // Load functions from the log file
     bool loadFromFile(const std::string& filename) {
         std::ifstream file(filename);
         if (!file.is_open()) {
@@ -138,7 +123,6 @@ public:
             return false;
         }
         
-        // Reserve space to avoid frequent reallocations
         all_functions.reserve(10000);
         address_to_function.reserve(10000);
         
@@ -147,12 +131,10 @@ public:
         int functions_loaded = 0;
         
         while (std::getline(file, line)) {
-            // Skip empty lines and comments early
             if (line.empty() || line[0] == '#') {
                 continue;
             }
             
-            // Check for module header (e.g., "Module 1: dynamorio.dll")
             if (line.find("Module ") == 0) {
                 size_t colon_pos = line.find(": ");
                 if (colon_pos != std::string::npos) {
@@ -162,7 +144,6 @@ public:
                 continue;
             }
             
-            // Parse function lines (e.g., "0x000000007117aa42 dynamorio.dll!NtCreateSection (forwarded)")
             if (line.find("0x") == 0 && !current_module.empty()) {
                 size_t first_space = line.find(' ');
                 if (first_space == std::string::npos) continue;
@@ -170,28 +151,22 @@ public:
                 std::string address_str = line.substr(0, first_space);
                 std::string function_info = trim(line.substr(first_space + 1));
                 
-                // Parse function info
                 size_t exclamation_pos = function_info.find('!');
                 if (exclamation_pos != std::string::npos) {
                     std::string dll_name = function_info.substr(0, exclamation_pos);
                     std::string func_part = function_info.substr(exclamation_pos + 1);
                     
-                    // Check if forwarded
                     bool is_forwarded = endsWith(func_part, "(forwarded)");
                     std::string function_name = func_part;
                     
                     if (is_forwarded) {
-                        // Remove " (forwarded)" from function name
                         function_name = trim(func_part.substr(0, func_part.length() - 12));
                     }
                     
-                    // Convert address
                     uintptr_t addr = hexStringToAddress(address_str);
                     
-                    // Create function info
                     FunctionInfo func_info(dll_name, function_name, addr, is_forwarded);
                     
-                    // Add to our data structures
                     address_to_function[addr] = func_info;
                     all_functions.push_back(std::move(func_info));
                     functions_loaded++;
@@ -202,24 +177,19 @@ public:
         file.close();
         std::cout << "Loaded " << functions_loaded << " functions from " << all_functions.size() << " modules" << std::endl;
         
-        // Invalidate sorted addresses so they get rebuilt on first use
         sorted_addresses_valid = false;
         
         return functions_loaded > 0;
     }
     
-    // Find function that contains this address (optimized with binary search and caching)
     FunctionInfo* findFunctionContaining(uintptr_t address) {
-        // Check cache first
         auto cache_it = containing_cache.find(address);
         if (cache_it != containing_cache.end()) {
             return cache_it->second;
         }
         
-        // Build sorted addresses if needed
         buildSortedAddresses();
         
-        // Binary search to find the function that contains this address
         auto it = std::upper_bound(sorted_addresses.begin(), sorted_addresses.end(), 
                                    std::make_pair(address, SIZE_MAX));
         
@@ -229,19 +199,16 @@ public:
             size_t func_index = it->second;
             uintptr_t func_addr = it->first;
             
-            // Check if the distance is reasonable (within 64KB of function start)
             if (address >= func_addr && (address - func_addr) < 0x10000) {
                 result = &all_functions[func_index];
             }
         }
         
-        // Cache the result (even if nullptr)
         containing_cache[address] = result;
         
         return result;
     }
     
-    // Print function info in single line format
     void printFunctionInfoOneLine(const FunctionInfo& func, std::ostream& output = std::cout) const {
         output << "Address: 0x" << std::hex << std::uppercase << func.address << std::dec << " | "
                << "DLL: " << func.dll_name << " | "
@@ -252,7 +219,6 @@ public:
         output << std::endl;
     }
     
-    // Print statistics
     void printStats() const {
         std::cout << "=== Function Lookup Statistics ===" << std::endl;
         std::cout << "Total functions loaded: " << all_functions.size() << std::endl;
@@ -260,7 +226,6 @@ public:
     }
 };
 
-// Main function - analyzes instruction trace
 int main() {
     std::ofstream called_funcs("api_calls_detected.log");
     if (!called_funcs.is_open()) {
@@ -270,7 +235,6 @@ int main() {
 
     FunctionLookup lookup;
     
-    // Load functions from the log file
     std::cout << "Loading functions from all_modules_functions.log..." << std::endl;
     if (!lookup.loadFromFile("all_modules_functions.log")) {
         std::cerr << "Failed to load functions from all_modules_functions.log" << std::endl;
@@ -278,10 +242,8 @@ int main() {
         return 1;
     }
     
-    // Print statistics
     lookup.printStats();
     
-    // Process instructions file
     std::cout << "\nProcessing instructions.log..." << std::endl;
     const std::string instr_name = "instructions.log";
     std::ifstream instr_file(instr_name);
@@ -301,29 +263,23 @@ int main() {
     called_funcs << "# Format: Previous instruction (exe) -> Current function (dll)" << std::endl;
     called_funcs << "# Generated by instruction_analyzer.exe" << std::endl << std::endl;
     
-    // Process instructions in batches for better performance
     while (std::getline(instr_file, line)) {
-        // Skip empty lines and comments
         if (line.empty() || line[0] == '#') {
             continue;
         }
         
-        // Parse current instruction
         InstructionInfo current_instruction = lookup.parseInstructionLine(line);
         if (current_instruction.address == 0) {
-            continue; // Invalid line format
+            continue;
         }
         
-        // Check if current instruction is in a DLL and previous was from an .exe
         if (!first_instruction && 
             !current_instruction.module_name.empty() &&
             !prev_instruction.module_name.empty()) {
             
-            // Current instruction is in DLL, previous was from exe
             if (!lookup.isExecutable(current_instruction.module_name) &&
                 lookup.isExecutable(prev_instruction.module_name)) {
                 
-                // Find the function that contains the current address
                 FunctionInfo* result = lookup.findFunctionContaining(current_instruction.address);
                 if (result) {
                     called_funcs << "=== API CALL DETECTED ===" << std::endl;
@@ -339,11 +295,9 @@ int main() {
             }
         }
         
-        // Update previous instruction for next iteration
         prev_instruction = current_instruction;
         first_instruction = false;
         
-        // Progress indicator
         if (++processed_count % 50000 == 0) {
             std::cout << "Processed " << processed_count << " instructions, detected " 
                      << logged_functions << " API calls..." << std::endl;
