@@ -88,15 +88,6 @@ tracer32.exe | tracer64.exe [OPTIONS] <victim.exe>
 
 ---
 
-## Directory Structure
-
-/build - Output binaries (x86 and x64)
-/dll_headers - Header files and argus.config (used for breakpoint tracing)
-/tracer - Core source files
-build_tracer.bat - Batch script for building the project
-
-
----
 
 ## Current Limitations
 
